@@ -1,8 +1,10 @@
-import {NextRequest} from "next/server";
-import {searchThesis} from "@/lib/mongodb/thesis";
+import { NextRequest, NextResponse } from "next/server";
+import { searchThesis } from "@/lib/mongodb/thesis";
 
-export async function GET(request: NextRequest) {
-    const results = await searchThesis(request.nextUrl.searchParams.get('query') || "");
-    console.log("TEST 2")
-    return Response.json(results)
+export async function POST(request: NextRequest) {
+  const body = await request.json();
+  const { query } = await body;
+  console.log(query);
+  const results = await searchThesis(query);
+  return Response.json(results);
 }
