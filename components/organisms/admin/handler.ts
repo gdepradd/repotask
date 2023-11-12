@@ -13,7 +13,7 @@ export default function useHandler() {
     const [thesis, setThesis] = useState<ThesisProps>({
         studentName: "",
         title: "",
-        year: 2017,
+        year: 2005,
         abstract: "",
     })
 
@@ -41,7 +41,7 @@ export default function useHandler() {
         setThesis({
             studentName: "",
             title: "",
-            year: 2017,
+            year: 2005,
             abstract: "",
         })
 

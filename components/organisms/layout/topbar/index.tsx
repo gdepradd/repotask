@@ -17,7 +17,7 @@ export default function Topbar(props: Props) {
             <div className="flex flex-row justify-between max-w-5xl mx-auto h-14 items-center">
                 <div>
                     <Link href="/" className="font-bold">
-                        Skripsi
+                        Repository Tugas Akhir Jurusan Sistem Komputer Universitas Sriwijaya
                     </Link>
                 </div>
                 <div>
