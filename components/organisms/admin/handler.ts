@@ -3,7 +3,7 @@ import {ThesisProps} from "@/lib/mongodb/thesis";
 
 export default function useHandler() {
     const currentYear = new Date().getFullYear(); // Get the current year
-    const startYear = 2017; // Start year
+    const startYear = 2005; // Start year
     const yearsArray = [];
 
     for (let year = startYear; year <= currentYear; year++) {
